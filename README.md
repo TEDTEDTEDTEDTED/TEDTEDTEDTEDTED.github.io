@@ -1,1 +1,78 @@
 # TEDTEDTEDTEDTED.github.io
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無標題文件</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+function MM_DW_effectHighlight(obj,method,effect,color,speed)
+{
+    obj[method](effect, {color:color}, speed);
+}
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_popupMsg(msg) { 
+  alert(msg);
+}
+function MM_goToURL() { 
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+	
+</script>
+<style type="text/css">
+body {
+}
+p {
+	z-index: 0;
+	color: rgba(212,37,40,1.00);
+	font-size: 92px;
+}
+#select {
+	background-size: 20px 200px;
+	width: 200px;
+	height: 50px;
+	border-style: hidden;
+	border-color: rgba(45,50,150,1.00);
+	background-color: rgba(31,38,171,1.00);
+	background-image: url(url);
+}
+</style>
+</head>
+
+<body>
+<p onClick="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000);MM_DW_effectHighlight($(this),'show','highlight','rgba(196,89,91,1)',1000)" onKeyPress="哈哈哈哈哈">
+  <marquee  behavior="scroll" direction="left" loop="infinite" scrollAmount=20> 
+  歡迎來到日本遊戲討論區 
+  </marquee> 
+  <span style="font-size: 36px"></span><span style="font-size: 18px"></span><span style="font-size: 36px"></span>  
+<p>
+  <input name="button" type="button" id="button" onClick="MM_DW_effectBounce($('#button'),'effect','bounce','up',200,'toggle',5,1000);MM_popupMsg('GGGGGGGGGGGGGGGG');MM_goToURL('parent','http://lib.hfu.edu.tw/main.php');return document.MM_returnValue" value="我要登入">
+</p>
+<div>
+ <select onchange="window.open(this.options[this.selectedIndex].value)"><optgroup selected="true" label="手機遊戲"> 
+ <option value="http://tw.yahoo.com">shadowverse</option>
+ <option value="http://www.google.com">fategrandorder</option>
+<optgroup label="線上遊戲"> 
+ <option value="http://www.youtube.com/">shadowverse</option>
+ <optgroup label="掌機遊戲"> 
+ <option value="http://www.pixnet.net/">Pokémon X & Y</option>
+</select>
+</div>
+</p>
+<form action="get.php" method="get">
+  ID：<input type='text'><br>
+密碼：<input type='text'><br>
+<p><input type='submit' value='送出表單'></p>
+</form>
+</p>
+</body>
+</html>
