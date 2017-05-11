@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8">
 <title>無標題文件</title>
+<div id="fb-root"></div>
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
 <script type="text/javascript">
+	(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.9";
+  fjs.parentNode.insertBefore(js, fjs);
+}
 function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
 {
     obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
@@ -58,9 +66,6 @@ p {
     <option value="http://www.pixnet.net/">Pokémon X & Y</option>
   </select>
 </div>
-<p>&nbsp;</p>
-</p>
-
-</p>
+<div class="fb-comments" data-href="https://tedtedtedtedted.github.io/" data-numposts="5"></div>
 </body>
 </html>
