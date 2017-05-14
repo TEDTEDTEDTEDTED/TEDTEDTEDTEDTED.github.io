@@ -64,6 +64,59 @@ body {
 	top: 0px;
 	background-color: rgba(194,194,194,1.00);
 }
+	.tabs-outer, .tabs-outer ul {
+overflow: visible !important;
+max-height: none !important;
+}
+.dropMenu li{
+display: block;
+position: relative;
+margin: 0px !important;
+padding: 0px !important;
+border: none !important;
+}
+.dropMenu a{
+display: block;
+text-decoration: none;
+border: none !important;
+padding: 5px !important;
+height: auto;
+}
+.dropMenu {
+top : 45px;
+left: -20px;
+text-align: left;
+position: absolute;
+z-index: 100;
+margin: 0px !important;
+padding: 5px !important;
+border: none !important;
+border-radius: 4px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+display: none;
+}
+.dropMenu:after {
+width: 0;
+height: 0;
+border-left: 140px solid transparent;
+border-bottom: 15px solid transparent;
+content: '';
+position: absolute;
+left: 0px;
+top: -15px;
+}
+
+.dropMenu li:first-child:after {
+width: 0;
+height: 0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+content: '';
+position: absolute;
+left: 50%;
+top: -15px;
+margin-left: -10px;
+}
 </style>
 </head>
 
