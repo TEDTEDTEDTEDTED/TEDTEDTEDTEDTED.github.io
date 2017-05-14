@@ -68,6 +68,33 @@ body {
 </head>
 
 <body>
+<script>
+(function () {
+var init = function () {
+var $ = jQuery,
+location = ".tabs-outer", 
+width = 120, 
+bgColor = "#e6e6fa", 
+menuLogo = "▼", 
+height = $(location + " li").height(),
+menu = {},
+i, x, l, html, info, item, url;
+menu["網站導覽"] = [
+" 本站HACK及工具 ~ http://wayne-fu.blogspot.com/2012/09/wfu-blog-hacks-and-tools.html",
+" 文章列表 ~ http://wayne-fu.blogspot.com/2012/04/demo-toc-date.html",
+" 如何使用本站 ~ http://wayne-fu.blogspot.com/2012/12/how-to-use-wfu-blog.html",
+" BLOGGER新手指引 ~ http://wayne-fu.blogspot.com/2013/04/blogger-guide-note.html",
+" 避免使用IE8 ~ http://wayne-fu.blogspot.com/2012/08/stop-using-IE.html"
+];
+menu["GOOGLE"] = [
+" GOOGLE試算表 ~ http://wayne-fu.blogspot.com/search/label/電腦- Google 相關-Google 試算表",
+" GOOGLE+ ~ http://wayne-fu.blogspot.com/search/label/電腦- Google 相關-G＋ 相關",
+" GOOGLE工具 ~ http://wayne-fu.blogspot.com/search/label/電腦- Google 相關-Google 工具"
+];
+$("head").append("<style>" + location + " li {position: relative;}" + location + " ul li:hover > .dropMenu {display: block;}.dropMenu{background-color:"+bgColor+" !important; top:"+(height+10)+"px !important;} .dropMenu li:first-child:after{border-bottom: 10px solid "+bgColor+" !important} .dropMenu:after{border-left:"+(width+20)+"px solid transparent !important}</style>");menuLogo=menuLogo.search("http")==-1?menuLogo:"<img src='"+menuLogo+"'/>";for(x in menu){l=menu[x].length;html="<ul class='dropMenu'>";for(i=0;i<l;i++){info=menu[x][i].replace(/ /g,"").split("~");item=info[0];url=info[1];html+="<li><a href='"+url+"' style='width:"+width+"px;' target='_blank'>"+item+"</a></li>"}html+="</ul>";$(location+" a:contains("+x+")").filter(function(){return $(this).text()===x}).html(x+" "+menuLogo).after(html)};},getScript=function(c,a){var b=document.createElement("script");if(b.readyState){b.onreadystatechange=function(){if(b.readyState=="loaded"||b.readyState=="complete"){b.onreadystatechange=null;if(a){a()}}}}else{b.onload=function(){if(a){a()}}}b.src=c;document.documentElement.firstChild.appendChild(b)};if(typeof jQuery==="undefined"){getScript("http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js",init)}else{init()};
+} )();
+
+</script>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -101,5 +128,7 @@ body {
               <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="e-mail" aria-describedby="i.desc.1537586191 i.err.1537586191" name="entry.529610551" value="" dir="auto" data-initial-dir="auto" data-initial-value="" />
       </span></div><div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1537586191" dir="auto"></div></div></div><div class="freebirdFormviewerViewItemsTextItemWrapper"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow jsname="W85ice"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea"><div class="quantumWizTextinputPaperinputInputArea"><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" ></div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div class="freebirdFormviewerViewItemsItemGradingGradingBox freebirdFormviewerViewItemsItemGradingFeedbackBox" jsname="R7fTud"></div><div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.1537586191" role="alert"></div></div></div><div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH" jsaction="rcuQ6b:npT2md;JIbuQc:V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe)" data-shuffle-seed="-2839577590267557201"><div class="freebirdFormviewerViewNavigationButtonsAndProgress"><div class="freebirdFormviewerViewNavigationButtons"><div role="button" class="quantumWizButtonPaperbuttonEl quantumWizButtonPaperbuttonFlat quantumWizButtonPaperbuttonDark quantumWizButtonPaperbutton2El2 freebirdFormviewerViewNavigationSubmitButton" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jsshadow jsname="M2UYVd" aria-disabled="false" tabindex="0" ><div class="quantumWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd"></div><div class="quantumWizButtonPaperbuttonFocusOverlay exportOverlay"></div>
       <content class="quantumWizButtonPaperbuttonContent"></content></div></div></div><div class="freebirdFormviewerViewNavigationPasswordWarning"></div></div><input type="hidden" name="pageHistory" value="0" /><input type="hidden" name="fbzx" value="165491483728311823" /><div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr"><input type="submit" name="submit" value="提交" id="ss-submit" class="buttonAll buttonGrey" onclick="submitFinish(this);" /></td></tr></tbody></table></div></ol></form>
+      
+
 </body>
 </html>
