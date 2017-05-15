@@ -90,15 +90,20 @@ width: 600px;
 
 	}
 
-	.fb-comments{
-		height: 100px;
-　position: absolute;
-　margin-top: -100px;
-		top: 0px;
-		left: 0px;
-		background-color: #996;
-
-	}
+	 .fb-comments{
+	text-align: center;
+	width:100%;
+  }
+.fb-comments:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+  .fb-comments > span{
+	display: inline-block;
+  vertical-align: middle;
+  }
 	.dropdown{
 	background-color: #996;
 	background-size: auto;
