@@ -40,6 +40,7 @@ p {
 	bottom: 50px;
 	clear: right;
 	position: absolute;
+	z-index:1;
 }
 #mG61Hd {
 	background-color: rgba(27,31,219,1.00);
@@ -86,6 +87,7 @@ body {
 	　padding-bottom: 100px;
 	top: 259px;
 	font-size: 14px;
+	z-index:0;
 	}
 
 	 #fb{
@@ -95,6 +97,7 @@ body {
 	text-align: center;
 	width: 100%;
 	background-color: #996;
+	z-index:-1;
   }
 .fb-comments:before {
   content: "";
@@ -111,7 +114,10 @@ body {
 	background-size: auto;
 	font-size: large;
 	}
-	
+	.fb-like{
+			z-index:2;
+            height: 20px;
+	}
 	
 body,td,th {
 	font-size: small;
@@ -199,6 +205,21 @@ body,td,th {
 <div></div>
 
 
+<ul class="nav nav-tabs">
+  <select name="select" onChange="window.open(this.options[this.selectedIndex].value)" id="GGG">
+    <option value="http://www.google.com">各類遊戲</option>
+    <optgroup selected="true" label="手機遊戲">
+      <option value="http://www.google.com">fategrandorder</option>
+      <option value="http://www.youtube.com/">shadowverse</option>
+    </optgroup>
+    <optgroup label="線上遊戲">
+      <option value="http://www.youtube.com/">shadowverse</option>
+    </optgroup>
+    <optgroup label="掌機遊戲">
+      <option value="http://www.pixnet.net/">Pokémon X &amp; Y</option>
+    </optgroup>
+  </select>
+</ul>
 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdfMsejup3BEqzYvpCeKK4rj0htdYv4Kh2Im9Iahf90WyEyVQ/formResponse" target="_self" method="POST" id="mG61Hd">
   <div class="freebirdFormviewerViewFormCard"><div class="freebirdFormviewerViewAccentBanner freebirdAccentBackground"></div><div class="freebirdFormviewerViewFormContent "><div class="freebirdFormviewerViewHeaderHeader"><div class="freebirdFormviewerViewHeaderTitleRow"><div class="freebirdFormviewerViewHeaderTitle" dir="auto" role="heading" aria-level="1"></div></div>
   <div class="freebirdFormviewerViewHeaderDescription" dir="auto">給些建議和想法</div></div>
@@ -208,21 +229,6 @@ body,td,th {
               <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="e-mail" aria-describedby="i.desc.1537586191 i.err.1537586191" name="entry.529610551" value="" dir="auto" data-initial-dir="auto" data-initial-value="" />
       </span></div><div class="freebirdFormviewerViewItemsItemItemHelpText" id="i.desc.1537586191" dir="auto"></div></div></div><div class="freebirdFormviewerViewItemsTextItemWrapper"><div class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput" jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV;" jsshadow jsname="W85ice"><div class="quantumWizTextinputPaperinputMainContent exportContent"><div class="quantumWizTextinputPaperinputContentArea"><div class="quantumWizTextinputPaperinputInputArea"><div jsname="LwH6nd" class="quantumWizTextinputPaperinputPlaceholder exportLabel" ></div></div><div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div><div jsname="XmnwAc" class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div></div></div><div class="quantumWizTextinputPaperinputCounterErrorHolder"><div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div></div></div></div><div class="freebirdFormviewerViewItemsItemGradingGradingBox freebirdFormviewerViewItemsItemGradingFeedbackBox" jsname="R7fTud"></div><div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.1537586191" role="alert"></div></div></div><div class="freebirdFormviewerViewNavigationNavControls" jscontroller="lSvzH" jsaction="rcuQ6b:npT2md;JIbuQc:V3upec(GeGHKb),HiUbje(M2UYVd),NPBnCf(OCpkoe)" data-shuffle-seed="-2839577590267557201"><div class="freebirdFormviewerViewNavigationButtonsAndProgress"><div class="freebirdFormviewerViewNavigationButtons"><div role="button" class="quantumWizButtonPaperbuttonEl quantumWizButtonPaperbuttonFlat quantumWizButtonPaperbuttonDark quantumWizButtonPaperbutton2El2 freebirdFormviewerViewNavigationSubmitButton" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefault=true); touchcancel:JMtRjd;focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;" jsshadow jsname="M2UYVd" aria-disabled="false" tabindex="0" ><div class="quantumWizButtonPaperbuttonRipple exportInk" jsname="ksKsZd"></div><div class="quantumWizButtonPaperbuttonFocusOverlay exportOverlay"></div>
 <content class="quantumWizButtonPaperbuttonContent"></content></div></div></div><div class="freebirdFormviewerViewNavigationPasswordWarning"></div></div><input type="hidden" name="pageHistory" value="0" /><input type="hidden" name="fbzx" value="165491483728311823" /><div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr"><input type="submit" name="submit" value="提交" id="ss-submit" class="buttonAll buttonGrey" onclick="submitFinish(this);" /></td></tr></tbody></table>
-  <ul class="nav nav-tabs">
-    <select name="select" onChange="window.open(this.options[this.selectedIndex].value)" id="GGG">
-      <option value="http://www.google.com">各類遊戲</option>
-      <optgroup selected="true" label="手機遊戲">
-        <option value="http://www.google.com">fategrandorder</option>
-        <option value="http://www.youtube.com/">shadowverse</option>
-        </optgroup>
-      <optgroup label="線上遊戲">
-        <option value="http://www.youtube.com/">shadowverse</option>
-        </optgroup>
-      <optgroup label="掌機遊戲">
-        <option value="http://www.pixnet.net/">Pokémon X &amp; Y</option>
-        </optgroup>
-    </select>
-  </ul>
 </div></ol></form>
 <div id="GGGGG">
       <article >
