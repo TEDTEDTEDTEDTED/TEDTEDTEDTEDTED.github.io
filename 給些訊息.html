@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日本遊戲討論區</title>
+<script src="js/jquery-1.11.3.min.js"href="js/jquery-1.11.3.min.js"></script>
+<script href="jQueryAssets/jquery-ui-effects.custom.min.js"src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>。
+<script src="https://apis.google.com/js/plusone.js">{lang: 'zh-TW'}</script>
+<style type="text/css">
+.Gplus { 
+margin: 0px;
+padding: 5px;
+text-align: center;
+background: #eeeeee;
+border: solid 1px #000000;
+cursor: pointer;
+}
+.Gnote { 
+margin: 0px;
+padding: 5px;
+background: #ffffff;
+border: solid 1px #000000;
+height: auto;
+display: none;
+}
+#gplus_comments {
+	text-align: center;
+	float: center;
+}
+#gplus_comment_switch { 
+margin-top: 10px;
+font-size: 14px;
+}
+body {
+	margin:0
+	margin-right: 0px;
+	background-color: #FFC;
+}
+
+
+</style>
+
+
+
+
+
+<script language="JavaScript">
+var yyns4=window.Event?true:false; var yy_mt = 0; var yy_ml = 0;
+if (yyns4) document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove = YY_Mousetrace;
+yy_tracescript = 'm()';
+
+</script>
+<div id="fade" style="width:100%; text-align:center;text-align:center; font-size:60pt; font-family: 標楷體"></div><script type="text/javascript">
+
+	function fadetext() {
+		fade.style.filter="alpha(opacity="+x+", style=0)";
+		x=((y<50)?x+4:x-4); y+=2;
+		if(y==100) {
+			z=((z>=texts.length-1)?1:z+1); y=0;
+			fade.innerHTML=texts[z]; fade.style.color=tcolor[z];
+		}
+		setTimeout("fadetext();", 30);
+	}
+	var texts=new Array(3), tcolor=new Array(3), x=0, y=0, z=1;
+	texts[1]="HELLO  你好嗎  哈哈";
+	texts[2]="歡迎討論";
+	texts[3]="快來拓荒這個網頁";
+	tcolor[1]="blue";
+	tcolor[2]="green";
+	tcolor[3]="#a0a";
+	fade.innerHTML=texts[z]; fade.style.color=tcolor[z];
+	window.onload=fadetext;
+</script>
+<div class='Gplus' title='按此展開．收合'>Google+ 留言提示</div>
+<div class='Gnote'>必須有 G+ 帳號才能留言。<br/>◆ 【公開留言】的分享對象，除了「公開」以外，還必須輸入「<b style='color: #cc0000; font-size: 120%;'>ted lin</b>」之後選擇正確的頭像，我才能收到留言通知</p>◆【私密留言】請將上圖步驟 1 去除即可<br/><b style='color: #cc0000; font-size: 120%;'></b></div>
+<div id='gplus_comments'></div>
+ 
+<script>
+
+var gplComm= {};
+gplComm.minHeight = 250; 
+gplComm.width = 570; 
+gplComm.openText = "︾ 展開 G+ 留言框"; 
+gplComm.closeText = "︽ 收起 G+ 留言框"; 
+(function(){gapi.comments.render("gplus_comments",{href:"https://tedtedtedtedted.github.io/talk.html"+top.location.hostname+top.location.pathname,width:gplComm.width,first_party_property:"BLOGGER",view_type:"FILTERED_POSTMOD"});var e=gplComm.minHeight+"px",i=gplComm.width+"px",f=$("#gplus_comments"),d=$("body"),g,a,j,b,c;d.append("<div id='gplus_comments_click' class='item-control blog-admin' style='cursor: pointer; z-index: 5;'></div>");$(".Gplus").click(function(){$(".Gnote").slideToggle("slow")});g=$("#gplus_comments_click");g.click(function(){$(".Gnote").slideToggle("slow");$(this).remove();gplComm.gcMove=function(){};var h=$("#gplus_comments");h.height(gplComm.maxHeight);h.find("iframe").height(gplComm.maxHeight);$("#gplus_comment_switch a").html(gplComm.closeText)});j=g[0];b=(window.getComputedStyle)?(window.getComputedStyle(j).display=="none")?0:1:(j.currentStyle&&j.currentStyle.display=="none")?0:1;c=(b==0)?unescape("%3Cp/%3E%3Cdiv%20style%3D%27text-align%3A%20right%3B%20color%3A%20%23ccc%3B%20font-size%3A%2011px%3B%20text-shadow%3A%201px%201px%201px%20lavender%3B%27%3E%3Ci%3Ereminder%20by%20%3Ca%20href%3D%27http%3A//wayne-fu.blogspot.com/2013/09/blogger-gplus-comment-reminder-2.html%27%20target%3D%27_blank%27%20title%3D%27%u529F%u80FD%u8A2D%u8A08%27%20style%3D%27text-decoration%3A%20none%3B%20color%3A%20%23ccc%27%3EWFU%20BLOG%3C/a%3E%20%26%20%3Ca%20href%3D%27http%3A//xox520.blogspot.com/2013/05/Blogger-comments-tip-jQuery-slide-effect.html%27%20target%3D%27_blank%27%20title%3D%27%u6ED1%u52D5%u6548%u679C%27%20style%3D%27text-decoration%3A%20none%3B%20color%3A%20%23ccc%27%3EDream%20Talker%3C/a%3E%3C/i%3E%3C/div%3E"):"";$(".Gnote").append(c);g.attr("class","");f.append("<div id='gplus_comment_switch'></div>");$("#gplus_comment_switch").html("<a href='#gplus_comments' onclick='gplComm.expand(this)' style='cursor: pointer; text-decoration: none;'>"+gplComm.openText+"</a>");a=f.find("iframe");a[0].onload=function(){var k={height:e,width:i,"margin-top":"15px","margin-bottom":"20px"},h={height:e,width:i,border:"1px solid #dddddd",borderRadius:"10px",boxShadow:"2px 2px 2px #d6d6d6",padding:"5px"},l=0,n=0,m=setInterval(function(){if(f.height()>gplComm.minHeight){gplComm.maxHeight=f.height();f.css(k);a.css(h);n++;if(n>3){clearInterval(m)}}l++;if(l>9){clearInterval(m)}},1000)};gplComm.expand=function(h){var k=$("#gplus_comments"),l=k.find("iframe");k.width(gplComm.width);if(k.height()==gplComm.minHeight){k.height(gplComm.maxHeight);l.height(gplComm.maxHeight);h.innerHTML=gplComm.closeText}else{k.height(gplComm.minHeight);l.height(gplComm.minHeight);h.innerHTML=gplComm.openText}};gplComm.gcMove=function(){var h=d.scrollTop(),m=f.offset().top,l=f.offset().left,k=f.width()-90;if(gplComm.maxHeight&&a.height()>gplComm.maxHeight){gplComm.maxHeight=a.height()}g.css({position:"absolute",top:(m+100)+"px",left:(l+90)+"px",height:"80px",width:k+"px"})};$(window).scroll(function(){gplComm.gcMove()})})();
+</script>
+</head>
+
+<body>
+
+<div class='g-plusone' data-size='medium'></div>
+<script src='https://apis.google.com/js/platform.js' async='async'style='width:150px; height:20px;'  ></script>
+
+</body>
+</html>
